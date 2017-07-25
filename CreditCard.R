@@ -16,16 +16,6 @@ df$time<-as.factor(df$time)
 table(df$time,df$Class)
 
 library(caTools)
-
-split=sample.split(df$Class,0.70)
-train<-df[split==T,]
-test<-df[split==F,]
-
-table(train$Class)
-table(test$Class)
-hist(df$V2)
-
-library(caret)
 summary(df)
 
 
